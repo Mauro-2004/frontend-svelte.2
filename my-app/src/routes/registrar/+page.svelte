@@ -34,7 +34,7 @@
     return true;
   }
 
-6
+
     function sendEmail() {
         emailjs.init(apikey); 
         emailjs.send(serviceID, templateID, {
@@ -49,18 +49,17 @@
         });
     }
 
-    let v_password = "";
     let passwordInsegura = "";
     let v_same_password = "";
     let r_pass = "";
     let v_nombre = "";
-    let v_apellido = "";
-    let v_documento = "";
-    let v_telefono = "";
     let v_email = "";
+    let v_telefono = "";
+    let v_direccion = "";
+    let v_tipousuario = "";
+    let v_password = "";
+    let v_fecharegistro = "";
     let v_rol = "";
-    let v_id_producto = "";
-    let v_estado = "";
 
     async function Register(event) {
         try {
@@ -95,14 +94,13 @@
                     },
                     body: JSON.stringify({
                         nombre: v_nombre,
-                        apellido: v_apellido,
-                        documento: v_documento,
-                        telefono: v_telefono,
                         email: v_email,
-                        password: v_password,
+                        telefono: v_telefono,
+                        direccion: v_direccion,
+                        tipo_usuario: v_tipousuario,
+                        contraseña: v_password,
+                        fecha_registro: v_fecharegistro,
                         id_rol: v_rol,
-                        id_producto: v_id_producto,
-                        estado: v_estado
                     }),
                 });
 
