@@ -95,12 +95,12 @@
                     body: JSON.stringify({
                         nombre: v_nombre,
                         email: v_email,
-                        telefono: v_telefono,
-                        direccion: v_direccion,
-                        tipo_usuario: v_tipousuario,
+                        telefono: "v_telefono",
+                        direccion: "v_direccion",
+                        tipo_usuario: "v_tipousuario",
                         contraseña: v_password,
-                        fecha_registro: v_fecharegistro,
-                        id_rol: v_rol,
+                        fecha_registro: "v_fecharegistro",
+                        id_rol: 2,
                     }),
                 });
 
@@ -115,7 +115,7 @@
                         icon: "success",
                     });
                     setTimeout(() => {
-                    location.reload();
+                    //location.reload();
                     }, 3000);
                 
                     //sendEmail()
